@@ -1,0 +1,118 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%, #05f3e3 100%);
+    }
+
+    .card {
+        display: flex;
+        height: 60vh;
+        width: 70vw;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: center;
+        border-radius: 10px;
+        background-color: #380036;
+        color: white;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        gap: 0;
+    }
+
+    .leftbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 90%;
+        width: 50%;
+        padding: 20px;
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+    .leftbox h1{
+        font-weight: bold;
+        font-size: 5.5em;
+    }
+    .leftbox p{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .leftbox:hover{
+        transform: scale(1.1);
+    }
+    .rightbox:hover{
+        transform: scale(1.1);
+            /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
+    }
+
+    .rightbox {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+        overflow: hidden;
+    }
+
+    .rightbox img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .three{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    .three span{
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="leftbox">
+                    <div class="one"><h1>Get insights that help your business grow</h1></div>
+                    <div class="two">                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis sint repellat veniam voluptatem facere iste sequi nemo asperiores inventore, nesciunt numquam suscipit, laboriosam excepturi, eos iusto odit tempora repudiandae quod sapiente! Omnis, in veniam voluptatum odit placeat dolor delectus ipsam quidem magnam dignissimos, nulla atque facere accusantium deleniti doloribus? Porro?
+                    </p></div>
+                    <dive class="three">
+                        <span>10K+ <br> Commnets</span> 
+                        <span>214+ <br> Paid Users</span>
+                        <span>12M+ <br> Views</span>
+                    </dive>
+                </div>
+                <div class="rightbox">
+                    <img src="icon.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
